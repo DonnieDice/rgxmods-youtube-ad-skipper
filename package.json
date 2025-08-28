@@ -1,6 +1,6 @@
 {
   "name": "rgxmods-youtube-ad-skipper-installer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Installer for the RGXMods YouTube Ad Skipper extension.",
   "bin": {
     "rgxmods-youtube-ad-skipper-installer": "./install.sh"

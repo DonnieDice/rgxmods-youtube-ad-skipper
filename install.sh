@@ -2,6 +2,10 @@
 
 # RGXMods YouTube Ad Skipper Installer
 
+# Navigate to the script's directory to ensure paths are correct
+SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" &> /dev/null && pwd)
+cd "$SCRIPT_DIR" || exit
+
 # Define the installation directory
 INSTALL_DIR="$HOME/.local/share/rgxmods-youtube-ad-skipper"
 
@@ -11,7 +15,7 @@ mkdir -p "$INSTALL_DIR"
 
 # Copy the extension files
 echo "Copying extension files..."
-cp -r manifest.json background.js content.js icons "$INSTALL_DIR/"
+cp -r manifest.json background.js content.js icons options.html options.js "$INSTALL_DIR/"
 
 # Provide instructions
 echo ""
