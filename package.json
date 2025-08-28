@@ -1,0 +1,15 @@
+{
+  "name": "rgxmods-youtube-ad-skipper-installer",
+  "version": "1.0.0",
+  "description": "Installer for the RGXMods YouTube Ad Skipper extension.",
+  "main": "install.sh",
+  "scripts": {
+    "postinstall": "chmod +x ./install.sh && ./install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonnieDice/rgxmods-youtube-ad-skipper.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
