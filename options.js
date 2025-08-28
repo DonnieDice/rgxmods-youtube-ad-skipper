@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const autoSkipCheckbox = document.getElementById('autoSkip');
 
   // Load saved settings
-  chrome.storage.sync.get({ autoSkip: false }, (items) => {
+  chrome.storage.sync.get({ autoSkip: true }, (items) => {
     autoSkipCheckbox.checked = items.autoSkip;
   });
 
