@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "RGXMods YouTube Ad Skipper",
+  "version": "1.0",
+  "description": "Instantly skip YouTube video ads with a customizable keyboard shortcut.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "commands": {
+    "skip-ad": {
+      "suggested_key": {
+        "default": "S"
+      },
+      "description": "Skip YouTube Ad"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
