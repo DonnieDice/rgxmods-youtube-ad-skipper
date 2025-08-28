@@ -28,7 +28,7 @@
   "commands": {
     "skip-ad": {
       "suggested_key": {
-        "default": "S"
+        "default": "Alt+S"
       },
       "description": "Skip YouTube Ad"
     }
